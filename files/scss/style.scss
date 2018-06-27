@@ -517,6 +517,208 @@ i {
                 padding-left: 0px;
             }
         }
+
+
+        /* Create Recipe */
+
+        &.content_div_create_recipe {
+            padding: 15px;
+            padding-top: 0px;
+        }
+        .create_recipe_form_header {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/greens-onion-spices-vegetables.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 80%;
+            height: 110px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 25px;
+
+            .header_lhs {
+                color: #fff;
+                display: flex;
+                align-items: center;
+                font-family: "roboto slab";
+                font-weight: bold;
+                font-size: 22px;
+                text-shadow: 1px 1px 1px #000;
+                .user_img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 100px;
+                    background-color: #fff;
+                    margin-right: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #000;
+                    text-shadow: none;
+                }
+            }
+
+            .header_rhs {
+                color: #fff;
+                display: flex;
+                align-items: center;
+                i {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .create_recipe_form_content {
+            padding: 30px 30px;
+            .form_title {
+                font-family: montserrat;
+                text-transform: uppercase;
+                text-align: center;
+                 h3 {
+                    color: #000;
+                    font-size: 18px;
+                    font-weight: 700;
+                 }
+                .form_title_underline {
+                    width: 50px;
+                    background-color: #FD6721;
+                    height: 3px;
+                    margin: 0 auto;
+                }
+            }
+
+            .form_content {
+                margin-top: 45px;
+            }
+        }
+        /* Create Recipe */
+
+        .add_photo_div {
+            background-color: #F7F7F7;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            border: 1px dashed #B3B3B3;
+            cursor: pointer;
+            margin-bottom: 30px;
+            user-select: none;
+            z-index: 10000;
+
+            &.add_photo_div_steps {
+                background-color: #fff;
+                margin-bottom: 0px;
+            }
+
+            i {
+                font-size: 55px;
+                color: #464646;
+                margin-bottom: 20px;
+            }
+
+            h5 {
+                color: #464646;
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: #747474;
+                font-size: 11px;
+            }
+        }
+
+
+        .form_input_div {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            .input_label {
+                color: #000;
+                font-family: "roboto slab";
+                font-weight: bold;
+                font-size: 13px;
+                margin-bottom: 8px;
+
+                & > span {
+                    font-weight: lighter;
+                    color: #444;
+                }
+            }
+
+            .input {
+                background-color: #f7f7f7;
+                border: 1px solid #ccc;
+                width: 100%;
+                padding: 10px 12px;
+                outline: none;
+                font-size: 14px;
+                border-radius: 4px;
+
+                &.input_steps {
+                    background-color: #fff;
+
+                    &.input_textarea {
+                        min-height: 94px;
+                    }
+                }
+
+                &.input_textarea {
+                    min-height: 116px;
+                }
+            }
+
+            .nice-select {
+                width: 100%;
+                border: 1px solid #ccc;
+                height: 43px;
+                line-height: 42px;
+            }
+
+            .nice-select .list {
+                width: 100%;
+            }
+        }
+        
+        .recipe_directions_bottom {
+            margin-top: 30px;
+            
+            &__heading {
+                font-family: montserrat;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 14px;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 10px;
+                margin-bottom: 45px;
+                margin-top: 45px;
+            }
+        }
+
+        .recipe_step_div_container {
+            h6 {
+                color: #000;
+                font-family: "roboto slab";
+                font-weight: bold;
+                font-size: 13px;
+                margin-bottom: 8px;
+            }
+            .recipe_step_div {
+                width: 100%;
+                background-color: #F7F7F7;
+                min-height: 200px;
+                padding: 20px;
+            }
+        }
+        
     }
 
     .content_div_large {
