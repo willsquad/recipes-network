@@ -9,6 +9,7 @@
             Recipes Network
         </title>
         <link rel="stylesheet" href="files/css/bootstrap.css">
+        <link rel="stylesheet" href="files/css/lightbox.min.css">
         <link rel="stylesheet" href="files/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:300,400,600,700|Raleway:600|Roboto+Slab" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -55,7 +56,11 @@
                         <!-- Recipe Top Row -->
                         <div class="row recipe_top_row">
                             <div class="col-12 col-md-4 recipe_top_image_container_lhs">
-                                <img src="files/images/recipe_image.jpg" alt="">
+                                <a href="files/images/recipe_image.jpg" data-lightbox="recipe-1" data-title="Main recipe image: Recipe image description(if any) goes here">
+                                    <div class="image_fullscreen_icon"><i class="material-icons">fullscreen</i></div>
+                                    <img src="files/images/recipe_image.jpg" alt="">
+                                </a>
+                                
                             </div>
                             <div class="col-12 col-md-8 recipe_top_details_rhs">
                                 <div class="recipe_name_author_rating">
@@ -119,12 +124,15 @@
 
                                         <div class="image_and_details row">
                                             <div class="col-12 col-lg-5 recipe_top_image_container_lhs directions_image_container">
-                                                <img src="files/images/chicken.jpeg" alt="">
+                                                <a href="files/images/chicken.jpeg" data-lightbox="recipe-1" data-title="Step 1 image: Step 1 image description(if any) goes here">
+                                                    <div class="image_fullscreen_icon"><i class="material-icons">fullscreen</i></div>
+                                                    <img src="files/images/chicken.jpeg" alt="">
+                                                </a>
                                             </div>
                                             <div class="col-12 col-lg-7 recipe_top_details_rhs directions_details_container">
                                                 <div class="recipe_stats">
                                                     <div class="stat">
-                                                        <i class="fas fa-stopwatch"></i> Time: 10 Minutes
+                                                        <i class="fas fa-stopwatch"></i> Time: 30 Minutes
                                                     </div>
                                                     <div class="stat">
                                                         <i class="fas fa-utensils"></i> Difficulty: Easy
@@ -146,12 +154,15 @@
 
                                         <div class="image_and_details row">
                                             <div class="col-12 col-lg-5 recipe_top_image_container_lhs directions_image_container">
-                                                <img src="files/images/chicken.jpeg" alt="">
+                                                <a href="files/images/recipe_image.jpg" data-lightbox="recipe-1" data-title="Step 2 image: Step 2 image description(if any) goes here">
+                                                    <div class="image_fullscreen_icon"><i class="material-icons">fullscreen</i></div>
+                                                    <img src="files/images/recipe_image.jpg" alt="">
+                                                </a>
                                             </div>
                                             <div class="col-12 col-lg-7 recipe_top_details_rhs directions_details_container">
                                                 <div class="recipe_stats">
                                                     <div class="stat">
-                                                        <i class="fas fa-stopwatch"></i> Time: 10 Minutes
+                                                        <i class="fas fa-stopwatch"></i> Time: 30 Minutes
                                                     </div>
                                                     <div class="stat">
                                                         <i class="fas fa-utensils"></i> Difficulty: Easy
@@ -234,6 +245,7 @@
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="files/js/lightbox.min.js"></script>
 <script src="files/js/main.js"></script>
 
 </html>
