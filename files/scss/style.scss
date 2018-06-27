@@ -224,6 +224,10 @@ i {
                     text-decoration: none;
                 }
             }
+
+            &.logged_in {
+
+            }
         }
         /* Menu RHS section */
     }
@@ -438,7 +442,12 @@ i {
             .directions_step_div {
                 border-bottom: 1px solid #D1D1D1;
                 padding-bottom: 1.5em;
-                margin-bottom: 1.5em;
+                margin-bottom: 3em;
+
+                &:last-child {
+                    border-bottom: none;
+                    margin-bottom: 0px;
+                }
                 .step_count {
                     font-family: montserrat;
                     background-color: #E3961A;
