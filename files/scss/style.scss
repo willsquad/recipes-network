@@ -208,6 +208,7 @@ i {
         /* Menu RHS section */
         .menu_rhs {
             display: flex;
+            align-items: center;
             font-weight: 700;
             font-size: 14px;
             cursor: pointer;
@@ -226,6 +227,57 @@ i {
             }
 
             &.logged_in {
+                .text {
+                    display: flex;
+                    margin-left: 15px;
+                    i{
+                        font-size: 30px;
+                    }
+                }
+
+                .user_details_container {
+                    background-color: #F7F7F7;
+                    height: 45px;
+                    min-width: 150px;
+                    border-radius: 50px;
+                    margin-left: 15px;
+                    border: 1px solid #DDDDDD;
+                    display: flex;
+                    align-items: center;
+                    padding: 0px 4px;
+
+                    .user_image {
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50px;
+                        background-color: #fff;
+
+                        img {
+                            border-radius: 50px;
+                        }
+
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .user_name {
+                        margin-left: 5px;
+                        font-size: 13px;
+                    }
+
+                    .account_show_more_icon {
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50px;
+                        background-color: #FD6721;
+                        margin-left: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                    }
+                }
 
             }
         }
