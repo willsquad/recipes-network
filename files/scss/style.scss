@@ -291,6 +291,39 @@ i {
 #content {
     min-height: 75vh;
 
+    .category_top_row {
+        margin-top: $breadcrumbs_margin;
+
+        .breadcrumbs {
+            padding: 0px;
+            font-family: montserrat;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            margin-bottom: $breadcrumbs_margin;
+            
+            a {
+                color: #333;
+            }
+            span {
+                color: #B9B9B9;
+                display: flex;
+                align-items: center;
+                margin: 0px 5px;
+
+                i {
+                    font-size: 19px;
+                }
+            }
+
+            .active_crumb {
+                color: #FD6721;
+            }
+        }
+    }
+
     .recipe_top_and_bottom_div_row {
         @include media-breakpoint-down(lg) {
             padding: 0px 15px;
@@ -651,7 +684,6 @@ i {
                 }
             }
         }
-        /* Create Recipe */
 
         .add_photo_div {
             background-color: #F7F7F7;
@@ -866,7 +898,53 @@ i {
                 }
             }
         }
+        /* Create Recipe */
         
+        /* Category */
+        &.content_div_category {
+            padding: 15px;
+            padding-top: 0px;
+            margin-top: 0px;
+        }
+        .recipe_category_form_header {
+            background-image: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.25)), url(../images/recipe_category.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 60%;
+            height: 175px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 25px;
+
+            .header_lhs {
+                color: #fff;
+                display: flex;
+                font-family: "roboto slab";
+                font-weight: bold;
+                font-size: 27px;
+                text-shadow: 1px 1px 1px #000;
+                display: flex;
+                flex-direction: column;
+
+                .category_heading_description {
+                    font-size: 13px;
+                    font-family: "open sans";
+                    font-weight: 300;
+                    margin-top: 5px;
+                    color: #cacaca;
+                }
+            }
+        }
+
+        .create_recipe_form_content {
+            padding: 30px 30px;
+            @include media-breakpoint-down(sm){
+                padding: 30px 20px;
+            }
+        }
+        /* Category */
         
     }
 
@@ -874,6 +952,7 @@ i {
         min-height: 700px;
         margin-bottom: 45px;
     }
+
 
     .input_checkbox {
         user-select: none;

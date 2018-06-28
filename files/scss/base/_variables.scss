@@ -17,6 +17,10 @@
 $max_width: 1100px;
 /* widths */
 
+/* margins */
+$breadcrumbs_margin: 15px;
+/* margins */
+
 /********* BOOTSTRAP MEDIA-QUERY MIXINS ********* Media Breakpoint  DUBO: down, up, between, only ************
 
 @include media-breakpoint-only(xs) {}  ||  @media (max-width: 575px) {}
