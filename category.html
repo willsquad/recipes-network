@@ -14,7 +14,7 @@
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
         <link rel="stylesheet" href="files/css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:300,400,600,700|Raleway:600|Roboto+Slab" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:300,400,600,700|Raleway:700|Roboto+Slab" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -26,45 +26,7 @@
         <div class="row">
             <!-- Header -->
             <div id="header" class="col-12">
-                <div class="row">
-                    <div id="main_header" class="col-12 d-flex align-items-center">
-                        <div class="main_header_container max_width d-flex align-items-center justify-content-between">
-                            <div class="logo">Recipes</div>
-                            <div class="search hidden-sm-down">
-                                <div class="mega_menu_select d-flex align-items-center justify-content-center">
-                                    Browse
-                                    <div class="browse_icon d-flex">
-                                        <i class="material-icons">keyboard_arrow_down</i>
-                                    </div>
-                                </div>
-                                <div class="search_input_div">
-                                    <div class="search_icon"><i class="material-icons">search</i></div>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="menu_rhs hidden-xs-up">
-                                <div class="text">Log In</div>
-                                <div class="button"><a href="#">Sign Up</a></div>
-                            </div>
-                            <div class="menu_rhs logged_in">
-                                <div class="text">
-                                    <i class="material-icons">favorite_border</i>
-                                </div>
-                                <div class="text">
-                                    <i class="material-icons">notifications_none</i>
-                                </div>
-                                
-                                <div class="user_details_container">
-                                    <div class="user_image"><img src="files/images/profile_pic.jpg" alt=""></div>
-                                    <div class="user_name">John Doe</div>
-                                    <div class="account_show_more_icon">
-                                        <i class="material-icons">keyboard_arrow_down</i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
             <!-- Header -->
 
@@ -110,7 +72,7 @@
                                             <img src="files/images/greens-onion-spices-vegetables.jpeg" alt="">
                                         </div>
                                         <div class="slider_text">
-                                            Roast Chicken & Sweet Potatoes
+                                            Roast Chicken With Olives, Garlic, and Thyme
                                         </div>
                                     </div>
                                     <!-- Slider Div -->
@@ -169,13 +131,239 @@
                                         </div>
                                     </div>
                                     <!-- Slider Div -->
-
-
-
-
                                 </div>
                             </div>
                             <!-- Trending Recipes  -->
+
+                            
+                            <!-- All Recipes -->
+                            <div class="all_recipes">
+                                <!-- All recipes header -->
+                                <div class="all_recipes__header">
+                                    <div class="all_recipes__header__lhs">All Recipes</div>
+                                    <div class="all_recipes__header__rhs">
+                                        <div class="input_div hidden-sm-down">
+                                            <div class="search_icon"><i class="material-icons">search</i></div>
+                                            <input type="text" placeholder="Find recipes">
+                                        </div>
+                                        <div class="select_div">
+                                            <select name="" id="">
+                                                <option value="">Popular</option>
+                                                <option value="">Newest</option>
+                                                <option value="">Oldest</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- All recipes header -->
+
+                                <!-- All recipes cards -->
+                                <div class="all_recipes__cards_container row">
+                                    
+                                    <!-- Recipe Card -->
+                                    <div class="recipe_card_div col-12 col-md-6 col-lg-4">
+                                        <div class="recipe_card">
+                                            <div class="recipe_card__image">
+                                                <img src="files/images/greens-onion-spices-vegetables.jpeg" alt="">
+                                            </div>
+                                            <div class="recipe_card__title">
+                                                <h5>Roast Chicken & Sweet Potatoes</h5>
+                                            </div>
+
+                                            <div class="rating">
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_empty">star</i>
+    
+                                                <div class="rating_count">
+                                                    (12 ratings)
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="author_div">
+                                                <div class="author_image"><img src="files/images/profile_pic.jpg" alt=""></div>
+                                                <div class="author_name">By, John Doe</div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <!-- Recipe Card -->
+
+                                    <!-- Recipe Card -->
+                                    <div class="recipe_card_div col-12 col-md-6 col-lg-4">
+                                        <div class="recipe_card">
+                                            <div class="recipe_card__image">
+                                                <img src="files/images/recipe_category.jpeg" alt="">
+                                            </div>
+                                            <div class="recipe_card__title">
+                                                <h5>Roast Chicken & Sweet Potatoes</h5>
+                                            </div>
+
+                                            <div class="rating">
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_empty">star</i>
+    
+                                                <div class="rating_count">
+                                                    (12 ratings)
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="author_div">
+                                                <div class="author_image"><img src="files/images/profile_pic.jpg" alt=""></div>
+                                                <div class="author_name">By, John Doe</div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <!-- Recipe Card -->
+
+                                    <!-- Recipe Card -->
+                                    <div class="recipe_card_div col-12 col-md-6 col-lg-4">
+                                        <div class="recipe_card">
+                                            <div class="recipe_card__image">
+                                                <img src="files/images/greens-onion-spices-vegetables.jpeg" alt="">
+                                            </div>
+                                            <div class="recipe_card__title">
+                                                <h5>Roast Chicken & Sweet Potatoes</h5>
+                                            </div>
+
+                                            <div class="rating">
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_empty">star</i>
+    
+                                                <div class="rating_count">
+                                                    (12 ratings)
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="author_div">
+                                                <div class="author_image"><img src="files/images/profile_pic.jpg" alt=""></div>
+                                                <div class="author_name">By, John Doe</div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <!-- Recipe Card -->
+
+                                    <!-- Recipe Card -->
+                                    <div class="recipe_card_div col-12 col-md-6 col-lg-4">
+                                        <div class="recipe_card">
+                                            <div class="recipe_card__image">
+                                                <img src="files/images/recipe_image.jpg" alt="">
+                                            </div>
+                                            <div class="recipe_card__title">
+                                                <h5>Roast Chicken & Sweet Potatoes</h5>
+                                            </div>
+
+                                            <div class="rating">
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_empty">star</i>
+    
+                                                <div class="rating_count">
+                                                    (12 ratings)
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="author_div">
+                                                <div class="author_image"><img src="files/images/profile_pic.jpg" alt=""></div>
+                                                <div class="author_name">By, John Doe</div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <!-- Recipe Card -->
+
+                                    <!-- Recipe Card -->
+                                    <div class="recipe_card_div col-12 col-md-6 col-lg-4">
+                                        <div class="recipe_card">
+                                            <div class="recipe_card__image">
+                                                <img src="files/images/chicken.jpeg" alt="">
+                                            </div>
+                                            <div class="recipe_card__title">
+                                                <h5>Roast Chicken & Sweet Potatoes</h5>
+                                            </div>
+
+                                            <div class="rating">
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_empty">star</i>
+    
+                                                <div class="rating_count">
+                                                    (12 ratings)
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="author_div">
+                                                <div class="author_image"><img src="files/images/profile_pic.jpg" alt=""></div>
+                                                <div class="author_name">By, John Doe</div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <!-- Recipe Card -->
+
+                                    <!-- Recipe Card -->
+                                    <div class="recipe_card_div col-12 col-md-6 col-lg-4">
+                                        <div class="recipe_card">
+                                            <div class="recipe_card__image">
+                                                <img src="files/images/recipe_category.jpeg" alt="">
+                                            </div>
+                                            <div class="recipe_card__title">
+                                                <h5>Roast Chicken & Sweet Potatoes</h5>
+                                            </div>
+
+                                            <div class="rating">
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_full">star</i>
+                                                <i class="material-icons star_empty">star</i>
+    
+                                                <div class="rating_count">
+                                                    (12 ratings)
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="author_div">
+                                                <div class="author_image"><img src="files/images/profile_pic.jpg" alt=""></div>
+                                                <div class="author_name">By, John Doe</div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <!-- Recipe Card -->
+
+                                </div>
+                                <!-- All recipes cards -->
+
+                                <!-- Show more recipes button -->
+                                <div class="all_recipes__more_button">
+                                    <button>More recipes</button>
+                                </div>
+                                <!-- Show more recipes button -->
+                            </div>
+                            <!-- All Recipes -->
+
+
                         </div>
                     </div>
                     <!-- content_div_large -->
@@ -185,56 +373,7 @@
 
             <!-- Footer -->
             <div id="footer" class="col-12">
-                <div class="row">
-                    <!-- Footer Top -->
-                    <div id="footer_top" class="col-12">
-                        <div class="max_width row d-flex">
-                            <div class="footer_sections footer_lhs col-12 col-md-3">
-                                <h2>Recipes</h2>
-                                <div class="social_icons">
-                                    <i class="fab fa-facebook"></i>
-                                    <i class="fab fa-twitter"></i>
-                                    <i class="fab fa-youtube"></i>
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-                            <div class="footer_sections footer_rhs col-12 col-md-9">
-                                <div class="row footer_links_container">
-                                    <div class="col-12 col-sm-6 col-md-3 footer_links_div">
-                                        <h2>About</h2>
-                                        <a>Who we are</a>
-                                        <a>Our services</a>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-3 footer_links_div">
-                                        <h2>Browse</h2>
-                                        <a>Meal Type</a>
-                                        <a>Dish Type</a>
-                                        <a>Cooking Style</a>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-3 footer_links_div">
-                                        <h2>Support</h2>
-                                        <a>Contact Us</a>
-                                        <a>Offers</a>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-md-3 footer_links_div">
-                                        <h2>Terms</h2>
-                                        <a>Terms and Conditions</a>
-                                        <a>Privacy policy</a>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <!-- Footer Top -->
 
-                    <!-- Footer Bottom -->
-                    <div id="footer_bottom" class="col-12 d-flex align-items-center justify-content-center">
-                        <i class="far fa-copyright"></i>&nbsp;2018 Recipes. All Rights Reserved
-                    </div>
-                    <!-- Footer Bottom -->
-                </div>
             </div>
             <!-- Footer -->
         </div>
@@ -249,5 +388,12 @@
 <script src="files/js/nice-select.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="files/js/main.js"></script>
+
+<script> 
+$(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html");
+}); 
+</script>
 
 </html>
