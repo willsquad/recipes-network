@@ -944,6 +944,55 @@ i {
                 padding: 30px 20px;
             }
         }
+
+        .trending_recipes {
+            width: 100%;
+            &__header {
+                font-family: montserrat;
+                text-transform: uppercase;
+                margin: 30px 0px;
+                font-weight: 700;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            &__slider {
+                max-height: 185px;
+                //background-color: #E8E8E8;
+                background-color: #E3961A;
+                display: flex;
+                padding: 15px 0px;
+
+                .slider_div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    outline: none;
+                    
+                    .slider_image_div {
+                        border-radius: 105px;
+                        border: 4px solid #fff;
+                        //border: 5px solid #E3961A;
+                        //box-shadow: 0px 0px 20px -5px #666;
+                        img {
+                            width: 105px;
+                            height: 105px;
+                            border-radius: 105px;
+                        }
+                    }
+                    .slider_text {
+                        text-align: center;
+                        font-size: 13px;
+                        //color: #000;
+                        color: #fff;
+                        margin-top: 5px;
+                        font-weight: 600;
+                        min-height: 42px;
+                    }
+                }
+            }
+        }
         /* Category */
         
     }
@@ -953,7 +1002,48 @@ i {
         margin-bottom: 45px;
     }
 
+        /* Slick slider arrows */
+        i.arrow_left {
+            float: left;
+            position: absolute;
+            left: 0;
+            top: 40%;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 10000;
+            font-size: 18px;
+            //color: #fd6721;
+            //color: #fff;
+            color: #000;
+        }
+    
+        i.arrow_right {
+            float: right;
+            position: absolute;
+            right: 0;
+            top: 40%;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 10000;
+            font-size: 18px;    
+            //color: #fd6721;     
+            //color: #fff;     
+            color: #000;     
+        }
+    
+        @media only screen and (max-width: 767px) {
+            i.arrow_right {
+                right: 0px;
+            }
+    
+            i.arrow_left {
+                left: 0px;
+            }
+        }
+        /* Slick slider arrows */
 
+
+    /* Add recipe form radiobuttons */
     .input_checkbox {
         user-select: none;
         .input_container {         
@@ -1053,6 +1143,7 @@ i {
             }
         }
     }
+    /* Add recipe form radiobuttons */
 }
 /* Content */
 

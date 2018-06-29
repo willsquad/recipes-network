@@ -11,4 +11,46 @@ $(document).ready(function() {
     $('.add_photo_div').on('click', function(){
         alert('Upload Image');
     });
+
+    $('.trending_recipes__slider').slick({
+        prevArrow:'<i class="arrow_left fas fa-chevron-left"></i>',
+        nextArrow:'<i class="arrow_right fas fa-chevron-right"></i>',
+        dots:false,
+        initialSlide: 0,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        centerMode: false,
+        centerPadding: '20px',
+        responsive: [
+            {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true
+            }
+            },
+            {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 450,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+    });
 });
