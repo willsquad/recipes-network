@@ -13,12 +13,17 @@
     position: relative;
 }
 
+/* Color */
+//$body_bg_color: #F2F4F3;
+$body_bg_color: #efefef;
+/* Color */
+
 /* widths */
 $max_width: 1100px;
 /* widths */
 
 /* margins */
-$breadcrumbs_margin: 15px;
+$breadcrumbs_margin: 20px;
 /* margins */
 
 /********* BOOTSTRAP MEDIA-QUERY MIXINS ********* Media Breakpoint  DUBO: down, up, between, only ************
