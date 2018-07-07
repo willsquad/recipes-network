@@ -6,6 +6,20 @@ $(document).ready(function() {
       'alwaysShowNavOnTouchDevices' : true
     });
 
+    $(document).on('click', '#menu_icon', function(){
+        $('#primary-menu').slideToggle();
+        $('#mobile_menu_i').toggleClass('fa-bars fa-times');
+    });
+
+
+    $(document).on('click', '.mega_menu_select', function(){
+        $('.browse_mega_menu').fadeToggle('fast');
+    });
+
+    $(window).scroll(function(){
+        $('.browse_mega_menu').hide();
+    });
+
     $('select').niceSelect();
 
     $('.add_photo_div').on('click', function(){
